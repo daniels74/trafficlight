@@ -1,0 +1,30 @@
+<div class="main-container">
+  <div class="light">
+    <app-trafficlight
+      *ngIf="'green' === light"
+      [lightColor]="light"
+    ></app-trafficlight>
+    <app-trafficlight
+      *ngIf="'green' !== light"
+      lightColor="grey"
+    ></app-trafficlight>
+
+    <app-trafficlight
+      *ngIf="'yellow' === light"
+      [lightColor]="light"
+    ></app-trafficlight>
+    <app-trafficlight
+      *ngIf="'yellow' !== light"
+      lightColor="grey"
+    ></app-trafficlight>
+    
+    <app-trafficlight
+      *ngIf="'red' === light"
+      [lightColor]="light"
+    ></app-trafficlight>
+    <app-trafficlight
+      *ngIf="'red' !== light"
+      lightColor="grey"
+    ></app-trafficlight>
+  </div>
+</div>
